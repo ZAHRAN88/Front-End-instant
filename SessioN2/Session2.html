@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Session2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        input[type="file"] {
+            margin-top: 5px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Contact Us</h1>
+    <form action="#">
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+
+        <p>Gender:</p>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+
+
+        <p>Interests:</p>
+        <input type="checkbox" id="programming" name="programming" value="programming">
+        <label for="programming">Programming</label>
+        <input type="checkbox" id="design" name="design" value="design">
+        <label for="design">Design</label>
+        <input type="checkbox" id="sports" name="sports" value="sports">
+        <label for="sports">Sports</label>
+
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+
+        <label for="resume">Upload Resume:</label>
+        <input type="file" id="resume" name="resume"  accept=".jpg,.jpeg,.png,.pdf,.doc,.docx">
+
+
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="">Select Country</option>
+            <option value="usa">USA</option>
+            <option value="EGY">EGY</option>
+            <option value="Russia">Russia</option>
+
+        </select>
+        <label for="phone">Phone number</label>
+        <input type="tel" maxlength="11" name="phone" id="phone">
+        <br> <br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </form>
+    <br><br>
+    <video width="100% " controls poster="img/FIFA 23 Screenshot 2023.02.17 - 01.39.01.65.png">
+        <source src="vid/Gomis.mp4 " type="video/mp4">
+    </video>
+
+</body>
+
+</html>
