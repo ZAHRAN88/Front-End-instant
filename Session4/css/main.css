@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+.clr {
+    clear: both;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+img {
+    width: 100%;
+}
+ 
+
+/*  */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.home {
+    height: 700px;
+    background-image: url(../img/drew-coffman-1872.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat ;
+    overflow: hidden;
+}
+.home .text { 
+    text-align: center;
+    margin-top: 200px;
+    color: #fff;
+}
+.home .text h1 {
+    font-size: 76px;
+}
+.home .text .btn {
+   padding: 15px 30px;
+   background-color: #8e7754;
+   border: 1px solid #fff;
+   margin-top: 20px;
+   color: #fff;
+   font-size: 20px;
+}
+._2nd{
+    padding: 20px;
+    width: 80%;
+    margin:  auto;
+}
+._2nd .cont{
+    padding: 20px;
+width: 50%;
+display: inline-block;
+
+float: left;
+
+}
+.container .cont h2 ,p,h5{
+    padding-top: 75px;
+}
+._3rd{
+    padding: 10px;
+    width: 80%;
+    margin:  auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+._3rd .cont{
+    padding: 20px;
+width: 50%;
+display: inline-block;
+
+float: left;
+
+}
+
+._4th{
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+
+}
+._4th .txt {
+    text-align: center;
+}
+._4th .ip {
+    text-align: center;
+}
+._4th .ip .contentt {
+    width: 33.333%;
+    display: inline-block;
+    float: left;
+    padding: 15px;
+    
+
+}
+._5th {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+._5th .cont{
+    padding: 20px;
+    width: 50%;
+    display: flexbox;
+    
+    
+    float: left;
+}
+._5th .if{
+    width: 100%;
+}
+._5th .cont .list{
+    list-style: none;
+}
+
+
