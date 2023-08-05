@@ -123,11 +123,20 @@ float: left;
     
 }
 .container ._5th .cont .contt{
-    font-family: "Alegreya";
+    padding: 15px ;
+    font-family: "Alegreya Sans";
+    font-size: 15px;
+    padding: 10px 20px;
+    color: #686868;
 
 
 }
 .container ._5th .cont .cont .list li{
     padding: 15px ;
+    padding: 15px ;
+    font-family: "Alegreya Sans";
+    font-size: 15px;
+    padding: 10px 20px;
+    color: #686868;
 }
 
