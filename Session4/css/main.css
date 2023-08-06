@@ -144,4 +144,19 @@ padding-bottom: 20px;
     padding: 10px 20px;
     color: #686868;
 }
+.home .text .btn:hover {
+    background-color: #6b5c41;
+    color: #fff;
+}
+.container ._5th .cont .contt a:hover {
+    color: #8e7754;
+    text-decoration: underline;
+}
+.container ._5th .cont .cont .list li:hover {
+    background-color: #f8f8f8;
+}
+.img-hover-effect:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
 
