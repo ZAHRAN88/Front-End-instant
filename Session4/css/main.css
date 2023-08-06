@@ -76,6 +76,7 @@ float: left;
    
 width: 50%;
 float: left;
+padding-bottom: 20px;
 }
 .container  ._3rd .cont h2,p{
     font-family: "Alegreya Sans";
@@ -130,6 +131,10 @@ float: left;
     color: #686868;
 
 
+}
+.container ._5th .cont .contt h2{
+    padding-left: 17px;
+    padding-bottom: 10px;
 }
 .container ._5th .cont .cont .list li{
     padding: 15px ;
