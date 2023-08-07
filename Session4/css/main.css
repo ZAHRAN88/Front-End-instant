@@ -17,8 +17,20 @@ img {
     width: 100%;
 }
  
+p{
+    font-family: "Alegreya Sans";
+    font-size: 18px;
+    padding: 10px 20px;
+    color: #686868;
 
+}
 
+h2,h3 {
+    font-family: "Alegreya Sans";
+    font-size: 30px;
+    padding: 10px 20px;
+    color: #686868;
+}
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -31,12 +43,17 @@ body {
     background-repeat: no-repeat ;
     overflow: hidden;
 }
+.home .text p{
+    font-size: larger;
+}
 .home .text { 
+
     text-align: center;
     margin-top: 200px;
     color: #fff  !important;
 }
 .home .text h1 {
+
     font-size: 76px;
 }
 .home .text .btn {
@@ -88,24 +105,28 @@ padding: auto;
     font-size: 23px;
     color: #373a3c;
 }
-._4th .container {
+/* ._4th{
+    background-color: #303030;
+}
+.container ._4th  {
     padding: 75px 0px;
     text-align: center;
-}
+     background-color: #f8f8f8;
+ }
 
-._4th .container  .contentt{
+.container  ._4th  .contentt{
     padding: 20px;
     width: 33.33%;
     float: left;
 }
-._4th .container .contentt h2{
+.container ._4th  .contentt h2{
     font-size: 23px;
     color: #373a3c;
 }
-._4th .container  .contennt h2{
+.container ._4th   .contennt h2{
     font-size: 23px;
     color: #373a3c;
-}
+} */
 ._5th .container  {
     padding: 75px 0px;
 }
@@ -150,6 +171,32 @@ padding: auto;
 }
 
 
-.bgcolor{
+/* .bgcolor{
+    background-color: #f8f8f8;
+} */
+.fourth{
     background-color: #f8f8f8;
 }
+.fourth .container{
+    padding: 75px 0px;
+
+}
+.fourth .container .contentt{
+    text-align: center;
+}
+.fourth .container .content .item{
+    text-align: center;
+    width: 33.333%;
+    float: left;
+    padding: 20px;
+
+}
+._3rd .container .cont .item{
+    padding-bottom: 50px;
+}
+/* .bgcolor{
+    background-color: #f8f8f8;
+} */
+/* ._5th{
+    background-color: #f8f8f8;
+} */
