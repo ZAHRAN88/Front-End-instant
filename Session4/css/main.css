@@ -19,6 +19,7 @@ img {
  
 
 
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -46,21 +47,21 @@ body {
    color: #fff;
    font-size: 20px;
 }
-.container ._2nd{
+._2nd .container {
     padding: 85px 0px;
 }
-.container ._2nd .cont{
+._2nd .container  .cont{
 padding: 20px;
 width: 50%;
 float: left;
 }
-.container ._2nd .cont p {
+._2nd .container  .cont p {
     font-family: "Alegreya Sans";
     font-size: 17px;
     padding: 20px;
     padding-top: 15px;
 }
-.container ._2nd .cont h2{
+._2nd .container  .cont h2{
     font-family: "Alegreya";
     font-size: 1.5rem;
     color: #303030;
@@ -68,62 +69,61 @@ float: left;
     margin-bottom: 25px;
     font-weight: 400;
 }
-.container ._3rd{
+
+._3rd .container {
     padding: 75px 0px;
-    background-color: #f8f8f8;
 }
-.container  ._3rd .cont{
-   
+._3rd .container  .cont{
 width: 50%;
 float: left;
-padding-bottom: 20px;
+padding: auto;
 }
-.container  ._3rd .cont h2,p{
+._3rd .container .cont h2,p{
     font-family: "Alegreya Sans";
     font-size: 15px;
     padding: 10px 20px;
     color: #686868;
 }
-.container  ._3rd .cont h2{
+._3rd .container  .cont h2{
     font-size: 23px;
     color: #373a3c;
 }
-.container ._4th{
+._4th .container {
     padding: 75px 0px;
     text-align: center;
 }
 
-.container ._4th .contentt{
+._4th .container  .contentt{
     padding: 20px;
     width: 33.33%;
     float: left;
 }
-.container ._4th .contentt h2{
+._4th .container .contentt h2{
     font-size: 23px;
     color: #373a3c;
 }
-.container ._4th .contennt h2{
+._4th .container  .contennt h2{
     font-size: 23px;
     color: #373a3c;
 }
-.container ._5th {
+._5th .container  {
     padding: 75px 0px;
 }
-.container ._5th .cont{
+._5th  .container .cont ,._5th  .container .contt{
     width: 50%;
-    float: left;
-    padding: 20px;
-    text-align: left;
+     float: left;  
+     padding: 20px;
+    
 }
-.container ._5th .cont .cont{
+._5th .container  .cont .cont{
     width: 100%;
 }
 
-.container ._5th .cont .cont .list{
+._5th .container  .cont .cont .list{
     list-style: none;
     
 }
-.container ._5th .cont .contt{
+._5th .container  .cont .contt{
     padding: 15px ;
     font-family: "Alegreya Sans";
     font-size: 15px;
@@ -132,11 +132,11 @@ padding-bottom: 20px;
 
 
 }
-.container ._5th .cont .contt h2{
+._5th .container  .cont .contt h2{
     padding-left: 17px;
     padding-bottom: 10px;
 }
-.container ._5th .cont .cont .list li{
+._5th .container  .cont .cont .list li{
     padding: 15px ;
     padding: 15px ;
     font-family: "Alegreya Sans";
@@ -148,15 +148,8 @@ padding-bottom: 20px;
     background-color: #6b5c41;
     color: #fff;
 }
-.container ._5th .cont .contt a:hover {
-    color: #8e7754;
-    text-decoration: underline;
-}
-.container ._5th .cont .cont .list li:hover {
+
+
+.bgcolor{
     background-color: #f8f8f8;
 }
-.img-hover-effect:hover {
-    transform: scale(1.1);
-    transition: transform 0.3s ease;
-}
-
