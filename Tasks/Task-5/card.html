@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Card</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            flex-shrink: 1;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+           /*  height: 25000px; */
+        }
+/* Card Sample CSS */
+        .Alpha {
+            max-width: 300px;
+            margin: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .Alpha img {
+            width: 100%;
+            height: auto;
+            transition: all .5s;
+        }
+
+        .Alpha-info {
+            padding: 15px;
+        }
+.card-img{
+    position: relative;
+    overflow: hidden;
+}
+        .overlay {
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.644);
+            transition: all .5s;
+            opacity: 0;
+            position: absolute;
+            z-index: 1;
+        }
+
+
+        .Alpha:hover img {
+            transform: scale(1.5);
+
+        }
+
+        .Alpha:hover .overlay {
+            opacity: 1;
+        }
+
+        .Alpha-title {
+            color: #303030;
+            font-size: 18px;
+            margin-bottom: 8px;
+            transition: all .3s;
+        }
+        .Alpha-title:hover{
+            color: rgb(16, 120, 247);
+            transform: translateY(-3px);
+        }
+
+        .Alpha-description {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .Alpha-price {
+            font-size: 20px;
+            color: #e44d26;
+            padding-bottom: 5px;
+            transition: all .5s;
+            transform: translateY(0);
+            padding-bottom: 42px;
+
+        }
+
+        .Alpha-price:hover {
+            color: rgb(16, 120, 247);
+            transform: translateY(-3px);
+            
+        }
+
+
+        .Alpha-button {
+            display: block;
+            position: absolute;
+            margin-top: 15px;
+            bottom: 10px;
+            width: 80%;
+            padding: 10px;
+            background-color:#e44d26;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transform: translateY(1px);
+            transition: all .5s;
+
+        }
+
+        .Alpha-button:hover {
+            background-color: #fff;
+            color: #e44d26;
+            transform: translateY(-4px);
+        }
+        
+        section{
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+            /* justify-content: space-evenly; */
+        }
+    </style>
+</head>
+
+<body>
+    
+    <section>
+        <!-- card sample -->
+        <div class="Alpha">
+            <i class="fa-solid fa-magnifying-glass" style="color: #ebeff4;"></i>
+            <i class="fa-solid fa-cart-shopping" style="color: #eceff3;"></i>
+            <div class="card-img">
+                
+                <div class="overlay">
+                    
+                    <i class="fa-solid fa-magnifying-glass" style="color: #ebeff4;"></i>
+                    <i class="fa-solid fa-cart-shopping" style="color: #eceff3;"></i>
+                    
+                </div>
+            <img src="img/Shopping-Bag-PSD-MockUp-2-600x600.jpg" alt="Product Image">
+    
+            </div>
+            <div class="Alpha-info">
+                <h2 class="Alpha-title">Prepared Card</h2>
+                <p class="Alpha-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="Alpha-price">99.99 L.E</p>
+                <a href="#" class="Alpha-button">Add to Cart</a>
+            </div>
+        </div>
+        <div class="Alpha">
+            <i class="fa-solid fa-magnifying-glass" style="color: #ebeff4;"></i>
+            <i class="fa-solid fa-cart-shopping" style="color: #eceff3;"></i>
+            <div class="card-img">
+                
+                <div class="overlay">
+                    
+                    <i class="fa-solid fa-magnifying-glass" style="color: #ebeff4;"></i>
+                    <i class="fa-solid fa-cart-shopping" style="color: #eceff3;"></i>
+                    
+                </div>
+            <img src="img/Shopping-Bag-PSD-MockUp-2-600x600.jpg" alt="Product Image">
+    
+            </div>
+            <div class="Alpha-info">
+                <h2 class="Alpha-title">Prepared Card</h2>
+                <p class="Alpha-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="Alpha-price">99.99 L.E</p>
+                <a href="#" class="Alpha-button">Add to Cart</a>
+            </div>
+        </div>
+        <div class="Alpha">
+            <i class="fa-solid fa-magnifying-glass" style="color: #ebeff4;"></i>
+            <i class="fa-solid fa-cart-shopping" style="color: #eceff3;"></i>
+            <div class="card-img">
+                
+                <div class="overlay">
+                    
+                    <i class="fa-solid fa-magnifying-glass" style="color: #ebeff4;"></i>
+                    <i class="fa-solid fa-cart-shopping" style="color: #eceff3;"></i>
+                    
+                </div>
+            <img src="img/Shopping-Bag-PSD-MockUp-2-600x600.jpg" alt="Product Image">
+    
+            </div>
+            <div class="Alpha-info">
+                <h2 class="Alpha-title">Prepared Card</h2>
+                <p class="Alpha-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="Alpha-price">99.99 L.E</p>
+                <a href="#" class="Alpha-button">Add to Cart</a>
+            </div>
+        </div>
+        <div class="Alpha">
+            <i class="fa-solid fa-magnifying-glass" style="color: #ebeff4;"></i>
+            <i class="fa-solid fa-cart-shopping" style="color: #eceff3;"></i>
+            <div class="card-img">
+                
+                <div class="overlay">
+                    
+                    <i class="fa-solid fa-magnifying-glass" style="color: #ebeff4;"></i>
+                    <i class="fa-solid fa-cart-shopping" style="color: #eceff3;"></i>
+                    
+                </div>
+            <img src="img/Shopping-Bag-PSD-MockUp-2-600x600.jpg" alt="Product Image">
+    
+            </div>
+            <div class="Alpha-info">
+                <h2 class="Alpha-title">Prepared Card</h2>
+                <p class="Alpha-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="Alpha-price">99.99 L.E</p>
+                <a href="#" class="Alpha-button">Add to Cart</a>
+            </div>
+        </div>
+        <div class="Alpha">
+            <i class="fa-solid fa-magnifying-glass" style="color: #ebeff4;"></i>
+            <i class="fa-solid fa-cart-shopping" style="color: #eceff3;"></i>
+            <div class="card-img">
+                
+                <div class="overlay">
+                    
+                    <i class="fa-solid fa-magnifying-glass" style="color: #ebeff4;"></i>
+                    <i class="fa-solid fa-cart-shopping" style="color: #eceff3;"></i>
+                    
+                </div>
+            <img src="img/Shopping-Bag-PSD-MockUp-2-600x600.jpg" alt="Product Image">
+    
+            </div>
+            <div class="Alpha-info">
+                <h2 class="Alpha-title">Prepared Card</h2>
+                <p class="Alpha-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="Alpha-price">99.99 L.E</p>
+                <a href="#" class="Alpha-button">Add to Cart</a>
+            </div>
+        </div>
+        
+
+    </section>
+   
+</body>
+
+</html>
