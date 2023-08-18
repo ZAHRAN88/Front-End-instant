@@ -82,7 +82,7 @@ font-family: "Source Serif Pro";
     background-color: #f2eeeebf;
 }
 .scnd{
-    width: 1465px;
+    
     height: 320.4px;
     background: #161616;
     margin: 0px - 15px;
@@ -157,6 +157,7 @@ text-transform: capitalize;
     width: 33.333%;
     float: left;
     padding: 10px;
+    text-align: center;
 }
 .item{
     position: relative;
@@ -184,11 +185,10 @@ opacity: 1;
 .overlay i{
     position: relative;
    text-align: center;
-   left: 30%;
-   top: 20%;
+   top: 50%;
     z-index: 6;
     font-size: 32px;
-    padding: 15px;
+    /* padding: 15px; */
 
 
 }
@@ -342,6 +342,8 @@ text-align: center;
   li:hover{
     color: #fff;
     cursor: pointer;
+    transform: translateY(-3px);
+    letter-spacing: 1px;
   }
 .A-fifth{
     background: #1D1D1D;
@@ -357,8 +359,22 @@ text-align: center;
     text-transform: uppercase;
 
 }
-.listaya li{
+.listaya .l-i{
     text-transform: uppercase;
+    background: #00000012;
+    padding: 15px;
+    transition: letter-spacing .5s;
+    
+
+
+}
+.listaya .l-ii{
+    background-color: #606060;
+    text-transform: uppercase;
+    padding: 15px;
+    color: #fff;
+    transition: all .5s;
+
 }
 .textat{
     display: flex;
@@ -397,4 +413,260 @@ transform: translateY(8px);
     position: sticky;
     top: 0;
     z-index: 50;
+}
+ .frth .container  .content .c1 .item .overlay  .overlay-items ,.frth .container  .content .c2 .item .overlay  .overlay-items ,.frth .container  .content .c3 .item .overlay  .overlay-items {
+    position: relative;
+    top: 50%;
+    
+}
+
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+    /* Adjust styles for screens with a width of 768px or less */
+     .home {
+        height: 250px; /* Adjust the height as needed */
+     } 
+
+    .home .container .content {
+        padding: 20px;
+    }
+
+    .home .container .content h1 , .home .container .content p{
+        font-size: 16px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .home .container .content .btn{
+        font-size: 12px;
+        padding: 10px 20px;
+        margin-top: 20px;
+    }
+    .container {
+        width: 90%; /* Adjust the width for smaller screens */
+        margin: auto;
+    }
+    /* Adjust font size for smaller screens */
+    .content .btn {
+        font-size: 14px;
+    }
+    .scnd .container h2{
+        font-size: 20px;
+    }
+    .scnd .container p{
+        font-size: 14px;
+    }
+    .thrd .container .item-image , .thrd .container .item-txt{
+        width: 100%;
+        float: none;
+        padding: 0px;
+    }
+    .thrd .container .item-txt h2{
+        font-size: 20px;
+    }
+    .thrd .container .item-txt p{
+        font-size: 14px;
+    }
+    .frth .container .txt h3{
+        font-size: 20px;
+    }
+    .frth .container .txt p{
+        font-size: 14px;
+    }
+    .frth .container .content .c1 ,.frth .container .content .c2 ,.frth .container .content .c3
+    {
+        width: 100%;
+/*         float: none;
+ */        padding: 0px;
+        text-align: center;
+    }
+    .frth .container .content .c1 .item .overlay  .overlay-items ,.frth .container .content .c2 .item .overlay  .overlay-items ,.frth .container .content .c3 .item .overlay  .overlay-items {
+        position: relative;
+        top: 50%;
+        
+    }
+
+    .fifth .container .cntnt-heading h3{
+        font-size: 20px;
+    }
+    .fifth .container .cntnt-heading p{
+        font-size: 14px;
+    }
+    .fifth .container .cntnt .item{
+        width: 100%;
+        /* float: none; */
+        padding: 0px;
+        text-align: center;
+    }
+    .fifth .container .cntnt .item h2{
+        font-size: 20px;
+    }
+    .fifth .container .cntnt .item .by{
+        font-size: 14px;
+    }
+    .fifth .container .cntnt .item .dsc{
+        font-size: 14px;
+    }
+    .fifth .container .cntnt .item .rm{
+        font-size: 14px;
+    }
+    .frst h1{
+        font-size: 20px;
+    }
+    .frst p{
+        font-size: 14px;
+    }
+    .A-scnd .col1 , .A-scnd .col2{
+        width: 100%;
+       /*  float: none; */
+        padding: 10px;
+    }
+    .A-thrd .col1 , .A-thrd .col2{
+        width: 100%;
+       /*  float: none; */
+        padding: 0px;
+    }
+    .A-scnd  .col1 h2 , .A-thrd .col1 h2{
+        font-size: 20px;
+    }
+    .A-scnd  .col1 p , .A-thrd .col1 p{
+        font-size: 12px;
+    }
+    .A-scnd  .col2 h2 , .A-thrd .col2 h2{
+        font-size: 20px;
+    }
+    .A-scnd  .col2 p , .A-thrd .col2 p{
+        font-size: 12px;
+    }
+    .A-frth{
+        width: 100%;
+    }
+    .A-frth .container .itemm{
+        width: 100%;
+        /* float: none; */
+        padding: 10px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .A-frth .container .itemm h5{
+        font-size: 17px;
+    }
+    .A-frth .container .itemm p{
+        font-size: 10px;
+    }
+    .A-fifth .container .listaya ul{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        justify-content: center;
+        color: #999999;
+        padding: 25px;
+        list-style: none;
+        text-transform: uppercase;
+    }
+    .A-fifth .container .listaya .l-i{
+        text-transform: uppercase;
+        background: #00000012;
+        padding: 15px;
+        transition: letter-spacing .5s;
+    }
+    .A-fifth .container .listaya .l-ii{
+        background-color: #606060;
+        text-transform: uppercase;
+        padding: 15px;
+        color: #fff;
+        transition: all .5s;
+    }
+    .A-fifth .container .textat{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        justify-items: center;
+        color: #999999;
+        gap: 50px;
+        font-size: 15px;
+        font-family: "source serif pro";
+        line-height: 1.8;
+    }
+    .A-fifth .container .textat .item{
+        width: 100%;
+       /*  float: none; */
+        padding: 0px;
+        text-align: center;
+    }
+    .A-fifth .container .textat .item h2{
+        font-size: 20px;
+    }
+    .A-fifth .container .textat .item p{
+        font-size: 14px;
+    }
+    .nav-home ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: center;
+        padding: 25px;
+        background-color: #121212;
+        list-style: none;
+    }
+    .nav-home a{
+        text-decoration: none;
+        color: #CFCFCF;
+        font-size: 20px;
+        transition: all .5s;
+    }
+
+    .nav-home {
+        position: sticky;
+        top: 0;
+        z-index: 50;
+    }
+    .nav-home a:hover  {
+ 
+        color: #fff;
+        transform: translateY(8px);
+        
+        
+        }
+    .A-thrd .container .item-image , .A-thrd .container .item-txt{
+        width: 100%;
+       /*  float: none; */
+        padding: 10px;
+    }
+    .A-frth .container .itemm .circle-box{
+        width: 88px;
+        height: 88px;
+        background-color: #333333;
+        border-radius: 50%; /* Make it a perfect circle */
+        border: solid .2px #888888;
+        margin: 0px 88px 22px;
+        text-align: center;
+        font-size: 32px;
+        line-height: 2.5;
+        color:#ffffff;
+      }
+    .A-frth .container .itemm p{
+        color: #999999;
+        font-family:"source serif pro"  ;
+    
+      }
+    .A-frth .container .itemm h2{
+        color: #ffffff;
+        font: 32px "source serif pro";
+        margin-bottom: 25px;
+      }
+
+    
+/* Adjust the background image positioning for smaller screens */
+/* .home {
+    background-size: cover;
+    background-position: center top;
+} */
+    /* Add more responsive adjustments as needed */
 }
