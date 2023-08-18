@@ -31,6 +31,7 @@
             align-items: center;
             justify-content: center;
             flex-direction: column;
+            list-style: none;
 
         }
 
@@ -54,11 +55,68 @@
         nav ul li a:hover {
             background-color: #0056b3;
         }
+        footer {
+            text-align: center;
+            color: #555;
+        }
+        footer {
+            text-align: center;
+            color: #555;
+        }
+        section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        section h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        section p {
+            font-size: 16px;
+            color: #444;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        section ul {
+            list-style: none;
+            margin-left: 20px;
+        }
+
+        section li {
+            font-size: 16px;
+            color: #444;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        section a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        section a:hover {
+            text-decoration: underline;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body>
-    <h1>Welcome to My Home Page</h1>
-    <nav>
+    <header>
+        <h1>Mohamed Zahran</h1>
+        <h2>Frontend Developer</h2>
+    </header>
+    
+ <!--    <nav>
         <ul>
             <li><a href="Tasks/Task-1/about.html" target="_blank">Task 1</a></li>
             <li><a href="Tasks/Task-2/Session2.html" target="_blank">Task 2</a></li>
@@ -68,6 +126,40 @@
             <li><a href="Tasks/Task-6/home.html" target="_blank">Task 6</a></li>
             <li><a href="Tasks/Task-7/index.html" target="_blank">Task 7</a></li>
         </ul>
-    </nav>
+    </nav> -->
+
+    
+    <section>
+        <h2>About Me</h2>
+        <p>I'm a passionate frontend developer with a strong focus on creating responsive and user-friendly web applications. I have experience in HTML, CSS, JavaScript, and various frontend frameworks.</p>
+    </section>
+
+    <section>
+        <h2>Projects</h2>
+        <p>Here are some of the projects I've worked on:</p>
+        <nav>
+            <ul>
+                <li><a href="Tasks/Task-1/about.html" target="_blank">Task 1</a></li>
+                <li><a href="Tasks/Task-2/Session2.html" target="_blank">Task 2</a></li>
+                <li><a href="Tasks/Task-3/index.html" target="_blank">Task 3</a></li>
+                <li><a href="Tasks/Task-4/index.html" target="_blank">Task 4</a></li>
+                <li><a href="Tasks/Task-5/index.html" target="_blank">Task 5</a></li>
+                <li><a href="Tasks/Task-6/home.html" target="_blank">Task 6</a></li>
+                <li><a href="Tasks/Task-7/index.html" target="_blank">Task 7</a></li>
+            </ul>
+        </nav>
+    
+    </section>
+
+    <section>
+        <h2>Contact Me</h2>
+        <p>If you're interested in collaborating or have any questions, feel free to reach out:</p>
+        <p>Email: <a href="mailto:mohamedzahrann0@gmail.com">Gmail</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/mohamed-zahran-383859222/" target="_blank">linkedin.com/in/mohamedzahran</a></p>
+    </section>
+
+    <footer>
+        &copy; 2023 Mohamed Zahran. All rights reserved.
+    </footer>
 </body>
 </html>
