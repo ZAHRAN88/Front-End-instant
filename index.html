@@ -10,6 +10,9 @@
             margin: 0;
             padding: 0;
         }
+        .clr{
+            clear: both;
+        }
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -110,10 +113,21 @@
             margin-bottom: 20px;
         }
         @media (max-width: 600px) {
+
+            nav ul {
+                display: block  ;
+            }
+
+            nav ul li {
+                margin: 10px;
+                float: left;
+            }
+
         nav ul li a {
             width: 100%;
             padding: 10px;
             margin: 10px;
+            float: left;
         }
 
         section {
@@ -166,6 +180,7 @@
                 <li><a href="Tasks/Task-5/index.html" target="_blank">Task 5</a></li>
                 <li><a href="Tasks/Task-6/home.html" target="_blank">Task 6</a></li>
                 <li><a href="Tasks/Task-7/index.html" target="_blank">Task 7</a></li>
+                <div class="clr"></div>
             </ul>
         </nav>
     
