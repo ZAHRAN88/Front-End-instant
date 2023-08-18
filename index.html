@@ -144,6 +144,14 @@
     height: 100%;
     z-index: 1;
 }
+#myLink {
+  color: #888; /* Change color to visually indicate it's disabled */
+  cursor: not-allowed; /* Change cursor style to indicate it's not clickable */
+  /* pointer-events: none; */ /* Prevent interactions, including clicks */
+}
+#myLink:hover{
+    cursor: not-allowed;
+}
         @media (min-width: 600px) {
             nav ul {
                 display: flex;
@@ -261,7 +269,7 @@
                 <li><a href="Tasks/Task-2/Session2.html" target="_blank">Task 2</a></li>
                 <li><a href="Tasks/Task-3/index.html" target="_blank">Task 3</a></li>
                 <li><a href="Tasks/Task-4/index.html" target="_blank">Task 4</a></li>
-                <li><a href="Tasks/Task-5/index.html" target="_blank">Task 5</a></li>
+                <li><a id="myLink" href="#" target="_blank" alt="To be responsive">Task 5</a></li>
                 <li><a href="Tasks/Task-6/home.html" target="_blank">Task 6</a></li>
                 <li><a href="Tasks/Task-7/index.html" target="_blank">Task 7</a></li>
                 <div class="clr"></div>

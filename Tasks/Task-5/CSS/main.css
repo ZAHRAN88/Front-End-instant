@@ -50,6 +50,7 @@ a{
 
 }
 
+
 .Home .Hometxt{
     text-align: center;
     color: azure;
@@ -202,7 +203,7 @@ border: 1px #fff solid ;
   ul li::before {
 
     content: "\2606";
-margin: 0px 10px 0px 0px;
+    margin: 0px 10px 0px 0px;
     position: absolute;
     left: 0;
     color: #0645a4; 
@@ -597,7 +598,7 @@ ul li {
   font-size: 11px;
 }
 
-.bg {
+/* .bg {
   width: 15px;
   height: 15px;
   text-align: center;
@@ -678,7 +679,7 @@ ul li {
 
 /*shoe slider indicator*/
 
-.left i {
+/* .left i {
   color: #ffd5c6;
   margin-top: 260px;
   transition: 0.3s all ease;
@@ -695,7 +696,7 @@ ul li {
 .left i:hover {
   cursor: pointer;
   color: #2a2f40;
-}
+}  */
 
 /*main card*/
 
@@ -711,7 +712,7 @@ ul li {
   margin-top: 2%;
 }
 
-.left {
+/* .left {
   content: "";
   height: 395px;
   width: 330px;
@@ -736,7 +737,7 @@ ul li {
   background-color: #2a2f40;
   z-index: 3;
   margin-left: 200px;
-}
+} */
 
 .product-info {
   position: absolute;
@@ -744,4 +745,14 @@ ul li {
   height: 394px;
   width: 305px;
   z-index: 10;
+}
+@media screen and (max-width: 768px){
+  .Home{
+    height: 400px;
+    width: 100%;
+  }
+  .Home .Hometxt{
+    font-size: 30px;
+    padding-top: 75px;
+  }
 }
