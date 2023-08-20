@@ -487,7 +487,13 @@ transform: translateY(8px);
         top: 50%;
         
     }
-
+    .cntnt{
+        flex-direction: column; 
+    }
+.cntnt .item {
+    width: 100%;
+    
+}
     .fifth .container .cntnt-heading h3{
         font-size: 20px;
     }
