@@ -1,185 +1,96 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Assignment2</title>
-    <style>
-         
-         .t3 td {
-            min-height: 200px;
-         }
-         .t3 td p {
-            margin: 0;
-         }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Materials</title>
+  <!-- Include Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Custom CSS */
 
-        
-        .t3{
-            width: 100%;
-        }
-        td img {
-            max-width: 100%;
-            height: auto;
-        }
-        .cont {
-            display: flex;
-            gap: 20px; 
-        }
+.level-card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
 
-        table {
-            width: 33%; 
-            
-        }
+.level-card:hover {
+  transform: translateY(-10px);
 
-        th, td {
-            
-            text-align: center;
-        }
-        td img {
-            max-width: 100%;
-            height: auto;
-        }
-    </style>
+
+}
+
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+  </style>
 </head>
 <body>
-    <div class="cont">
-        <table border="1">
-            <thead>
-                <th colspan="2">Name</th>
-                <td>ID</td>
-            </thead>
-            <tr>
-                <td>Mohamed</td>
-                <td>Zahran</td>
-                <td>01</td>
-            </tr>
-            <tr>
-                <td>Mohamed</td>
-                <td>Nashaat</td>
-                <td>02</td>
-            </tr>
-        </table>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">Student Materials</a>
+  </nav>
 
-        <table border="1">
-            <tr>
-                <td rowspan="3">APRIL</td>
-                <td> 1</td>
-                <td> 2</td>
-            </tr>
-            <tr>
-                <td> 3</td>
-                <td> 4</td>
-            </tr>
-            <tr>
-                <td> 5</td>
-                <td> 6</td>
-            </tr>
-            <tr>
-                <td> 7</td>
-                <td> 8</td>
-                <td> 9</td>
-            </tr>
-            <tr>
-                <td> 10</td>
-                <td> 11</td>
-                <td> 12</td>
-            </tr>
-        </table>
-
-        <table border="1">
-            <tbody>
-                <tr>
-                    <td style="text-align: center;" colspan="3">2022</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                </tr>
-                <tr>
-                    <td rowspan="2" colspan="2">Faniesta</td>
-                    <td colspan="2">4</td>
-                </tr>
-                <tr>
-                    <td colspan="2">5</td>
-                </tr>
-
-                <tr>
-                    <td> 6</td>
-                    <td> 7</td>
-                    <td> 8</td>
-
-                </tr>
-            </tbody>
-        </table>
+  <div class="container mt-5 fade-in">
+    <h2 class="text-center mb-4">Select Your Academic Level</h2>
+    <div class="row">
+      <div class="col-md-6 col-lg-3">
+        <div class="card level-card">
+          <img src="images/freshman.jpg" class="card-img-top" alt="Freshman">
+          <div class="card-body">
+            <h5 class="card-title">Freshman</h5>
+            <a href="materials.html" class="btn btn-primary">View Materials</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card level-card">
+          <img src="images/sophomore.jpg" class="card-img-top" alt="Sophomore">
+          <div class="card-body">
+            <h5 class="card-title">Sophomore</h5>
+            <a href="materials.html" class="btn btn-primary">View Materials</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card level-card">
+          <img src="images/junior.jpg" class="card-img-top" alt="Junior">
+          <div class="card-body">
+            <h5 class="card-title">Junior</h5>
+            <a href="materials.html" class="btn btn-primary">View Materials</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card level-card">
+          <img src="images/senior.jpg" class="card-img-top" alt="Senior">
+          <div class="card-body">
+            <h5 class="card-title">Senior</h5>
+            <a href="materials.html" class="btn btn-primary">View Materials</a>
+          </div>
+        </div>
+      </div>
     </div>
-<div style="width: 50%;">
-    <table class="t3" border="1">
-        <tr>
-            <td><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure corrupti distinctio incidunt ratione impedit eos aperiam. Veniam voluptatibus maiores sit quidem, fugiat beatae autem dolore saepe. Laudantium nostrum rem error.</p></td>
-            <td><img style="height: 100%; width: 100%;" src="img/ARSAVFC.jpg" alt=""></td>
-            <td><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, iste! Ipsa quibusdam, eveniet, sed repellendus voluptas repudiandae accusantium voluptate nulla dicta vero praesentium adipisci, architecto dolores doloremque explicabo reiciendis sunt.</p></td>
-            <td><img src="img/ARSTOT.jpg" alt=""></td>
+  </div>
 
-        </tr>
-        <tr>
-            <td><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure corrupti distinctio incidunt ratione impedit eos aperiam. Veniam voluptatibus maiores sit quidem, fugiat beatae autem dolore saepe. Laudantium nostrum rem error.</p></td>
-            <td><img src="img/ARSTOT.jpg" alt=""></td>
-            <td><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, iste! Ipsa quibusdam, eveniet, sed repellendus voluptas repudiandae accusantium voluptate nulla dicta vero praesentium adipisci, architecto dolores doloremque explicabo reiciendis sunt.</p></td>
-            <td><img src="img/BRNARS.jpg" alt=""></td>
-
-        </tr>
-        <tr>
-            <td><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure corrupti distinctio incidunt ratione impedit eos aperiam. Veniam voluptatibus maiores sit quidem, fugiat beatae autem dolore saepe. Laudantium nostrum rem error.</p></td>
-            <td><img src="img/MANUARS.jpg" alt=""></td>
-            <td><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, iste! Ipsa quibusdam, eveniet, sed repellendus voluptas repudiandae accusantium voluptate nulla dicta vero praesentium adipisci, architecto dolores doloremque explicabo reiciendis sunt.</p></td>
-            <td><img src="img/MD2.jpg" alt=""></td>
-
-        </tr>
-    </table>
-
-</div>
-<div>
-    <p>
-        
-        <b>Instant</b> 
-        
-        <i>instructor</i>
-        
-        <u>Mohamed</u>
-       
-        <s>Salah</s>
-    </p>
-
-    <p>
-        
-        <sub>Instant instructor</sub> 
-        
-        <sup>Mohamed Salah</sup>
-    </p>
-
-    <p>
-        
-        <small>Instant instructor Mohamed Salah</small>
-    </p>
-
-    <p>
-     
-        <strong>Instant instructor</strong> Mohamed Salah
-    </p>
-
-    <p>
-        
-        <em>Instant instructor Mohamed Salah</em>
-    </p>
-
-    <p>
-        
-        <code>Instant instructor Mohamed Salah</code>
-    </p>
-
-    <p>
-       
-        <pre>Instant instructor Mohamed Salah</pre>
-    </p>
-</div>
+  <!-- Include Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

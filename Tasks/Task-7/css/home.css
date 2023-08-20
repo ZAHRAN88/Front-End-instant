@@ -1,0 +1,730 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+a{
+    text-decoration: none;
+}
+/* Home section */
+.home{
+    background: url('../img/full-8-1.jpeg');
+    background-position: center;
+    background-size: cover;
+        overflow: hidden;   
+        text-align: center;
+        height: 755px;
+}
+.home p{
+font: 22px "open sans" ;
+color: #ffffffeb;
+margin-bottom: 18px;
+}
+.home h1{
+    font: 64px "open sans";
+    color: #ffffff;
+    margin-bottom: 18px;
+    position: relative;
+}
+.txxxt{
+    position: relative;
+
+padding-top:250px ;
+z-index: 2;
+
+}
+.h-btn{
+    color: #121212;
+    padding: 15px 28px;
+    font: 15px "open sans";
+    margin-bottom: 12px;
+    border-style: none;
+    border-radius: 3px;
+    overflow: hidden;
+
+}
+.home .overlay{
+    background:#1976d27f;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    
+
+}
+.home .h-btn{
+    position: relative;
+
+}
+.h-btn .overlay{
+    background:#1976d236;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    opacity: 0;
+    transition: all 0.5s ease;
+    
+
+}
+.h-btn:hover .overlay{
+    opacity: 1;
+}
+/* End Of home section */
+
+/* scnd section */
+.scnd{
+    text-align: center;
+    height: 320.4px;
+    padding: 85px 0;
+}
+.scnd h2{
+font: 32px "open sans ";
+color: #303030;
+padding: 25px;
+line-height: 1.6px;
+}
+.scnd p{
+    font: 16px "open sans";
+    color: #606060;
+    margin-bottom: 18px;
+    /* line-height: 2.6px; */
+}
+/* start thrd section */
+
+.thrd
+{
+    padding: 80px 0;
+}
+.thrd .col1 , .thrd .col2 , .thrd .col3{
+    float: left;
+    padding: 35px;
+    width: 33.333%;
+
+}
+.icon-box-content h5{
+    color: #303030;
+    font: 17px "open sans ";
+    margin-bottom: 15px;
+}
+.icon-box-content p{
+    font: 14px "open sans";
+    color: #606060;
+
+
+}
+.icon-box-content{
+    padding: 20px;
+}
+/* Start frth section */
+.frth .txt{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 60px;
+
+}
+.txt h3{
+    color: #303030;
+    font: 30px open sans ;
+
+
+}
+.txt p{
+    color: #888888;
+    font: 17px open sans;
+    margin-top: 17px;
+}
+.frth .catigories{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 45px;
+    font: 12px "open sans";
+
+
+}
+.catigories li{
+    color: #2d2c2c;
+    font: 15px open sans;
+}
+.cards .colum{
+    float: left;
+    width: 33.333%;
+    padding: 15px;
+}
+.Alpha {
+    max-width: 300px;
+    margin: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+}
+
+.Alpha img {
+    width: 100%;
+    height: auto;
+    transition: all .5s;
+}
+
+.Alpha-info {
+    padding: 15px;
+}
+.card-img{
+position: relative;
+overflow: hidden;
+}
+.frth .overlay .overlay-icons{
+    text-align: center;
+    position: relative;
+    top: 50%;
+    letter-spacing: 9.6px;
+    font-size: 26px;
+}
+.frth .card-img .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.644);
+    transition: all .5s;
+    opacity: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+
+.Alpha:hover img {
+    transform: scale(1.5);
+
+}
+
+.Alpha:hover .card-img .overlay {
+    opacity: 1;
+}
+
+.Alpha-title {
+    color: #303030;
+    font-size: 18px;
+    margin-bottom: 8px;
+    transition: all .3s;
+}
+.Alpha-title:hover{
+    color: rgb(16, 120, 247);
+    transform: translateY(-3px);
+}
+
+.Alpha-description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.Alpha-price {
+    font-size: 20px;
+    color: #e44d26;
+    padding-bottom: 5px;
+    transition: all .5s;
+    transform: translateY(0);
+    padding-bottom: 42px;
+
+}
+
+.Alpha-price:hover {
+    color: rgb(16, 120, 247);
+    transform: translateY(-3px);
+    
+}
+
+
+.Alpha-button {
+    display: block;
+    position: absolute;
+    margin-top: 15px;
+    bottom: 10px;
+    width: 80%;
+    padding: 10px;
+    background-color:#e44d26;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transform: translateY(1px);
+    transition: all .5s;
+
+}
+
+.Alpha-button:hover {
+    background-color: #fff;
+    color: #e44d26;
+    transform: translateY(-4px);
+}
+
+.ffth{
+    padding: 85px 0;
+}
+.ffth .heading{
+    margin-top:10px ;
+    margin-bottom: 55px;
+    text-align: center;
+}
+.heading h3{
+    color: #303030;
+    font: 30px "open sans";
+
+}
+.heading p{
+    color: #888888;
+    font: 17px open sans;
+margin-top: 17px;
+}
+.person{
+    float: left;
+    width: 33.333%;
+    padding: 15px;
+}
+.said{
+    background-color: #f8f8f8;
+    color: #686868;
+    font: 15px open sans;
+    padding: 22px 26px;
+    margin-bottom: 10px;
+}
+.name {
+    color: #686868;
+    font: 15px open sans;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+
+}
+.comp{
+    color: #686868;
+    font: 15px open sans;
+    margin-top: 2px;
+    margin-bottom: 8px;
+    text-transform: capitalize;
+    font-weight: lighter;
+    
+}
+
+
+  footer{
+    height: 416px;
+    background-color:#1b1b1b;
+    /* padding-top: 500px; */
+    padding: 85px 0;
+  }
+  .parent , .parent3{
+    width: 33.333%;
+    float: left;
+    padding: 25px;
+  }
+  .parent p ,.parent3 p{
+    color: #797979;
+    font: 14px "open sans";
+    margin-bottom: 6px;
+    padding-bottom: 7px;
+  }
+
+  .parent h2 ,.parent3 h2{
+  
+       color: #fff;
+       margin-bottom: 25px;
+       font: 17px "open sans";
+
+}
+.container .cards{
+    overflow: hidden;
+  }
+  .cards .card{
+    width: 33.333%;
+    float: left;
+    padding: 30px;
+   /*  border: .1px #f8f8f8 solid; */
+    /* border-left: none;
+    border-right: none;
+    border-top: none; */
+    overflow: hidden;
+  }
+  .cards .card .card-txt{
+    color: #686868;
+    font-size: 15px;
+    font-family: open sans , arial;
+    background-color: #ffffff;
+    padding: 22px 0px;
+    text-align: left;
+    /* _ */
+    cursor: grab;
+   
+  }
+  .card-img .overlay{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background:#0004079e;
+    opacity: 0;
+    z-index: 1;
+    transition: all .5s;
+    transition-delay: .2s;
+  }
+  .cards .card .card-image{
+   /*  display: block; */
+    overflow: hidden;
+    transition-duration: .5s;
+    transition-delay: .2s;
+    cursor: grab;
+    position: relative;
+  }
+  .cards .card .card-image img{
+    transition-duration: .5s;
+    transition-delay: .2s;
+  }
+  .cards .card:hover img{
+    transform: scale(1.2);
+  }
+  .cards .card:hover .overlay{
+    opacity: 1;
+  }
+  .card .card-txt h3{
+    color: #333333;
+    font-size: 19px;
+    font-family: open sans, arial;
+    overflow: hidden;
+   transition-duration: .2s;
+   transition-delay: .1s;
+   transition-timing-function: ease-in-out;
+  
+  }
+  .card .card-txt p{
+   color: #888888; 
+   font-family: open sans , arial;
+   font-size: 15px;
+  }
+  .container .txxt h3{
+    color: #303030;
+    font-size: 30px;
+    font-family: open sans , arial;
+    text-align: center;
+  
+  
+  }
+  .card .card-txt h3:hover{
+    color: #2299e2;
+  }
+  .container .txxt p{
+    color:#777777;
+    font-size: 19px;
+    font-family: open sans,arial;
+   /*  margin: 17px 245px 0px; */
+  text-align: center;
+  }
+  ._8th .container .txxt h3{
+    color: #303030;
+    font-size: 30px;
+    font-family: open sans , arial;
+  
+  
+  }
+  .card-txt .pp{
+    color: #686868;
+    font-size: 15px;
+    font-family: open sans , arial;
+    margin-bottom: 15px;
+  }
+  .card-txt .rm::after{
+  
+      content: '\2192';
+      display: inline-block;
+      margin-left: 8px;
+      vertical-align: middle;
+      margin-top: -2px;
+      font-size: 14px;
+      font-family: 'EngageIcons';
+   
+  }
+  .card-txt .rm{
+    transition-duration: .2s;
+    transition-delay: .1s;
+  }
+  .card-txt .rm:hover{
+    color: #2299e2;
+  }
+
+hr{
+    border: solid #797979 0.5px;
+    color: #797979;
+}
+/* responsive for screens from 600px */
+@media (max-width: 600px) {
+
+
+    .home{
+        height: 500px;
+       /*  display: flex;
+        align-items: start;
+        flex-direction: column; */
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .home .overlay{
+        height: 500px;
+    }
+    
+    .home h1{
+        font-size: 30px;
+        /* padding-bottom: 40px; */
+    }
+    .home p{
+        font-size: 15px;
+        /* padding-bottom: 40px; */
+    }
+    .home .h-btn{
+        font-size: 10px;
+       /*  padding-top: 40px; */
+    }
+    .scnd h2{
+        font-size: 25px;
+    }
+    .scnd p{
+        font-size: 14px;
+    }
+    .thrd .col1 , .thrd .col2 , .thrd .col3{
+        width: 100%;
+    }
+    .frth .txt h3{
+        font-size: 25px;
+    }
+    .frth .txt p{
+        font-size: 14px;
+    }
+    .frth .catigories{
+        display: block;
+        text-align: center;
+    }
+    .cards .colum{
+        width: 100%;
+    }
+    .ffth .heading h3{
+        font-size: 25px;
+    }
+    .ffth .heading p{
+        font-size: 14px;
+    }
+    .person{
+        width: 100%;
+    }
+    .said{
+        font-size: 14px;
+    }
+    .name{
+        font-size: 14px;
+    }
+    .comp{
+        font-size: 14px;
+    }
+    .parent , .parent3{
+        width: 100%;
+    }
+    .parent h2 , .parent3 h2{
+        font-size: 14px;
+    }
+    .parent p , .parent3 p{
+        font-size: 14px;
+    }
+    .cards .card{
+        width: 100%;
+    }
+    .card .card-txt h3{
+        font-size: 14px;
+    }
+    .card .card-txt p{
+        font-size: 14px;
+    }
+    .container .txxt h3{
+        font-size: 25px;
+    }
+    .container .txxt p{
+        font-size: 14px;
+    }
+    ._8th .container .txxt h3{
+        font-size: 25px;
+    }
+    .card-txt .pp{
+        font-size: 14px;
+    }
+    .card-txt .rm::after{
+        font-size: 14px;
+    }   
+    .card-txt .rm{
+        font-size: 14px;
+    }
+    .ffth .heading{
+        margin-bottom: 25px;
+    }
+    .ffth .heading p{
+        margin-bottom: 25px;
+    }
+    .ffth .heading h3{
+        margin-bottom: 25px;
+    }
+    .ffth .heading{
+        margin-top: 25px;
+    }
+    /* make .sixth section responsive */
+    .sixth .container .txxt h3{
+        font-size: 25px;
+    }
+    .sixth .container .txxt p{
+        font-size: 14px;
+    }
+    .sixth .container .txxt .btn{
+        font-size: 14px;
+    }
+    .sixth .txxt{
+        font-size: smaller;
+        text-align: center;
+    }
+
+
+
+
+
+
+
+}
+
+/* make the website responsive for mobiles */
+@media (max-width: 992px) {
+    
+    .home{
+        height: 500px;
+    }
+    .home .overlay{
+        height: 500px;
+    }
+    
+    .home h1{
+        font-size: 40px;
+    }
+    .home p{
+        font-size: 18px;
+    }
+    .home .h-btn{
+        font-size: 14px;
+    }
+    .scnd h2{
+        font-size: 25px;
+    }
+    .scnd p{
+        font-size: 14px;
+    }
+    .thrd .col1 , .thrd .col2 , .thrd .col3{
+        width: 100%;
+    }
+    .frth .txt h3{
+        font-size: 25px;
+    }
+    .frth .txt p{
+        font-size: 14px;
+    }
+    .frth .catigories{
+        display: block;
+        text-align: center;
+    }
+    .cards .colum{
+        width: 100%;
+    }
+    .ffth .heading h3{
+        font-size: 25px;
+    }
+    .ffth .heading p{
+        font-size: 14px;
+    }
+    .person{
+        width: 100%;
+    }
+    .said{
+        font-size: 14px;
+    }
+    .name{
+        font-size: 14px;
+    }
+    .comp{
+        font-size: 14px;
+    }
+    .parent , .parent3{
+        width: 100%;
+    }
+    .parent h2 , .parent3 h2{
+        font-size: 14px;
+    }
+    .parent p , .parent3 p{
+        font-size: 14px;
+    }
+    .cards .card{
+        width: 100%;
+    }
+    .card .card-txt h3{
+        font-size: 14px;
+    }
+    .card .card-txt p{
+        font-size: 14px;
+    }
+    .container .txxt h3{
+        font-size: 25px;
+    }
+    .container .txxt p{
+        font-size: 14px;
+    }
+    ._8th .container .txxt h3{
+        font-size: 25px;
+    }
+    .card-txt .pp{
+        font-size: 14px;
+    }
+    .card-txt .rm::after{
+        font-size: 14px;
+    }
+    .card-txt .rm{
+        font-size: 14px;
+    }
+    .ffth .heading{
+        margin-bottom: 25px;
+    }
+    .ffth .heading p{
+        margin-bottom: 25px;
+    }
+    .ffth .heading h3{
+        margin-bottom: 25px;
+    }
+    .ffth .heading{
+        margin-top: 25px;
+    }
+    /* make .sixth section responsive */
+    .sixth .container .txxt h3{
+        font-size: 25px;
+    }
+    .sixth .container .txxt p{
+        font-size: 14px;
+    }
+    .sixth .container .txxt .btn{
+        font-size: 14px;
+    }
+    .sixth .txxt{
+        font-size: smaller;
+        text-align: center;
+    }   
+}
