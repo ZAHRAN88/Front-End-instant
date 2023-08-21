@@ -300,6 +300,25 @@ margin-top: 17px;
     font: 15px open sans;
     padding: 22px 26px;
     margin-bottom: 10px;
+    position: relative;
+}
+.said::before{
+    content: '\201C';
+    font-size: 50px;
+    color: #e44d26;
+    position: absolute;
+    top: -10px;
+    left: 0;
+}
+.said::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: -26px;
+    left: 0;
+    border: solid teal 12px;
+    border-color: #f8f8f8 transparent transparent transparent;
 }
 .name {
     color: #686868;
