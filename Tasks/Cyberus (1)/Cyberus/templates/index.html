@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Notes Website</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            {% if 'username' in session %}
+                <li><a href="{{ url_for('notes') }}">My Notes</a></li>
+                <li><a href="{{ url_for('add_note') }}">Add Note</a></li>
+                <li><a href="{{ url_for('logout') }}">Logout</a></li>
+            {% else %}
+            {% endif %}
+        </ul>
+    </nav>
+    {% block content %}{% endblock %}
+</body>
+</html>

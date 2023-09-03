@@ -1,0 +1,53 @@
+/* style.css */
+
+/* Style the <h1> element */
+h1 {
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Style the <h2> element */
+h2 {
+    font-size: 24px;
+    color: #555;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Style the <ul> element */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Style each list item (<li>) */
+li {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+/* Style the <h3> element within list items */
+li h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Style the <p> element within list items */
+li p {
+    font-size: 16px;
+    color: #777;
+}
+
+/* Style the "No notes found" message */
+p.no-notes {
+    font-size: 18px;
+    color: #555;
+    text-align: center;
+    margin-top: 20px;
+}

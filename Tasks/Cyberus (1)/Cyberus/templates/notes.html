@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Notes</title>
+</head>
+<body>
+    {% block content %}
+    <h1>Welcome, <span id="username">{{ username }}</span>!</h1>
+    <h2>My Notes</h2>
+    {% if notes %}
+        <ul>
+            {% for note in notes %}
+                <li>
+                    <h3>{{ note[1] }}</h3>
+                    <p>{{ note[2] }}</p>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p class="no-notes">No notes found.</p>
+    {% endif %}
+{% endblock %}
+</body>
+</html>
+
