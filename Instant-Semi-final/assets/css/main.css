@@ -1871,3 +1871,6 @@ outline: none;}
 .fa{
     margin-right: 4px;
 }
+.navbar-toggler[aria-expanded="true"] {
+    transform: rotate(360deg);
+}

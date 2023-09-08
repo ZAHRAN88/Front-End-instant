@@ -10,13 +10,80 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+
 
     
 </head>
 <body>
-    <div class="logo-container"><a href="#" class="logo" target="_blank">
+	<nav class="navbar p-4 navbar-expand-lg bg-body-tertiary">
+		<div class="container-fluid">
+		  <a class="navbar-brand justify-content-center" href="#"> LevelUpia</a>
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<i class="fa-solid fa-bars-staggered"></i>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav m-auto mb-2 mb-lg-0">
+			  <li class="nav-item">
+				<a class="nav-link" aria-current="page" href="index.html">Home</a>
+			  </li>
+			  <li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+				  Tournament
+				</a>
+				<ul class="dropdown-menu">
+				  <li><a class="dropdown-item" href="#">Upcoming matches</a></li>
+				  <li><a class="dropdown-item" href="#">Match details</a></li>
+				  <li><a class="dropdown-item" href="#">Player details</a></li>
+				  <li><hr class="dropdown-divider"></li>
+				  <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+				</ul>
+			  </li>
+			  <li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+				  Pages
+				</a>
+				<ul class="dropdown-menu">
+				  <li><a class="dropdown-item" href=" pages/about.html">About Us </a></li>
+				  <li><a class="dropdown-item" href=" pages/our-gamers.html">Our Gamers</a></li>
+				  <li><a class="dropdown-item" href=" pages/sponsers.html">Sponsors</a></li>
+				  <li><hr class="dropdown-divider"></li>
+				  <li><a class="dropdown-item" href=" pages/help.html">Help</a></li>
+				  <li><a class="dropdown-item" href=" pages/error.html">Error 404</a></li>
+				</ul>
+				
+			  </li>
+			  <li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="shop.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+				  Shop
+				</a>
+				<ul class="dropdown-menu">
+					<li><a class="dropdown-item" href="  shop/addtocart.html">Add to cart</a></li>
+					<li><a class="dropdown-item" href="  shop/checkout.html">Check Out</a></li>
+				  </ul>
+				
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" aria-current="page" href="blog.html">Blog</a>
+			  </li>
+			  
+			  <li class="nav-item">
+				<a class="nav-link" aria-current="page" href="contact.html">Contact</a>
+			  </li>
+			  
+			</ul>
+			<form class="d-flex searchh align-items-center" role="search">
+				<div><i class="fa-solid fa-magnifying-glass me-4 mt-3"></i></div>
+				
+				<a class="default-btn" href="login.html">Join Our Team</a>
+			
+			</form>
+		  </div>
+		</div>
+	  </nav>
+    <!-- <div class="logo-container"><a href="#" class="logo" target="_blank">
 		LevelUpia
-	</a></div>
+	</a></div> -->
 	
 
 	<div class="section">
@@ -73,5 +140,74 @@
 	      	</div>
 	    </div>
 	</div>
+
+	<footer class="footer-section">
+		<div class="container">
+		<div class="row footer-items">
+		<div class="col-lg-3 col-sm-6 sm-padding">
+		<div class="footer-item">
+		<a class="brand" href="index.html">LevelUpia</a>
+		<p>Our success in creating business solutions is due in large part to our talented and highly
+		committed team.</p>
+		<ul class="social-list">
+		<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+		<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+		<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+		<li><a href="#"><i class="fab fa-youtube"></i></a></li>
+		</ul>
+		</div>
+		</div>
+		<div class="col-lg-3 col-sm-6 sm-padding">
+		<div class="footer-item footer-list">
+		<div class="widget-title">
+		<h3>Usefull Links</h3>
+		</div>
+		<ul class="footer-links">
+		<li><a href="upcoming-matches.html">Tournaments</a></li>
+		<li><a href="faq-page.html">Help Center</a></li>
+		<li><a href="about.html">Privacy and Policy</a></li>
+		<li><a href="about.html">Terms of Use</a></li>
+		<li><a href="contact.html">Contact Us</a></li>
+		</ul>
+		</div>
+		</div>
+		<div class="col-lg-3 col-sm-6 sm-padding">
+		<div class="footer-item">
+		<div class="widget-title">
+		<h3>Contact Us</h3>
+		</div>
+		<ul class="footer-contact">
+		<li><span>Location:</span>153 Williamson Plaza, Maggieberg, MT 09514</li>
+		<li><span>Join Us:</span>Info@YourGmail24.com</li>
+		<li><span>Phone:</span>+1 (062) 109-9222</li>
+		</ul>
+		</div>
+		</div>
+		<div class="col-lg-3 col-sm-6 sm-padding">
+		<div class="footer-item subscribe-wrap">
+		<div class="widget-title">
+		<h3>Newsletter Signup</h3>
+		</div>
+		<form action="#" class="subscribe-form" novalidate="true">
+		<input class="form-control" type="email" name="EMAIL" placeholder="Your Email" required="">
+		<input type="hidden" name="action" value="mailchimpsubscribe">
+		<button class="submit">Subscribe Now</button>
+		<div class="clearfix"></div>
+		<div id="subscribe-result">
+		<div class="subscription-success"></div>
+		<div class="subscription-error"></div>
+		</div>
+		</form>
+		</div>
+		</div>
+		</div>
+		</div>
+		<div class="copyright-wrap">
+		<div class="container">
+		<p>© <span id="currentYear">2023</span> Mohamed Zahran  All Rights Reserved.</p>
+		</div>
+		</div>
+		
+		</footer>
 </body>
 </html>
