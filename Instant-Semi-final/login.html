@@ -211,6 +211,29 @@
 		</footer>
 
 
+		<script>
+			// Get a reference to the link element by its id
+			const doubleClickLink = document.getElementById("doubleClickLink");
+		  
+			// Define the URL you want to navigate to
+			const linkUrl = doubleClickLink.getAttribute("href"); // Get the href attribute
+		  
+			// Initialize a click count variable
+			let clickCount = 0;
+		  
+			// Add a double-click event listener to the link
+			doubleClickLink.addEventListener("dblclick", function (event) {
+				// Prevent the default behavior of the link
+				event.preventDefault();
+		  
+				// Check if it's a double-click (two clicks within a short time)
+				if (++clickCount === 2) {
+					// Redirect to the specified link
+					window.location.href = linkUrl;
+				}
+			});
+		  </script>
+
 
 
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

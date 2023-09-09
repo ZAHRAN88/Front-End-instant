@@ -32,7 +32,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav m-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Home</a>
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -61,7 +61,7 @@
             
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="shop.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" id="doubleClickLink" href="shop.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Shop
             </a>
             <ul class="dropdown-menu">
@@ -82,7 +82,7 @@
         <form class="d-flex searchh align-items-center" role="search">
             <div><i class="fa-solid fa-magnifying-glass me-4 mt-3"></i></div>
             
-            <a class="default-btn">Join Our Team</a>
+            <a class="default-btn" href="login.html">Join Our Team</a>
         
         </form>
       </div>
@@ -332,6 +332,28 @@
 
 
 <!-- Scripts -->
+<script>
+  // Get a reference to the link element by its id
+  const doubleClickLink = document.getElementById("doubleClickLink");
+
+  // Define the URL you want to navigate to
+  const linkUrl = doubleClickLink.getAttribute("href"); // Get the href attribute
+
+  // Initialize a click count variable
+  let clickCount = 0;
+
+  // Add a double-click event listener to the link
+  doubleClickLink.addEventListener("dblclick", function (event) {
+      // Prevent the default behavior of the link
+      event.preventDefault();
+
+      // Check if it's a double-click (two clicks within a short time)
+      if (++clickCount === 2) {
+          // Redirect to the specified link
+          window.location.href = linkUrl;
+      }
+  });
+</script>
 
     <script src=" assets/js/swiper.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
