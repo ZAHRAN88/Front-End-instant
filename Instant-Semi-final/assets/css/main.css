@@ -55,6 +55,7 @@ p {
     font-size: 17px;
     line-height: 27px;
     margin-bottom: 15px;
+color: #fff;
 }
 
 a{
@@ -364,12 +365,8 @@ transition: all .5s;
     width: 150%;
     margin-left: -25%;
 }
-.swiper-3d, .swiper-3d.swiper-css-mode .swiper-wrapper {
-    perspective: 1200px;
-}
-.swiper-pointer-events {
-    touch-action: pan-y;
-}
+
+
 .swiper-wrapper {
     position: relative;
     width: 100%;
@@ -377,15 +374,8 @@ transition: all .5s;
     z-index: 1;
     display: flex;
     transition-property: transform;
-   /*  box-sizing: content-box; */
 }
-/* .swiper-slide {
-    flex-shrink: 0;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    transition-property: transform;
-} */
+
  .carousel-item img {
     border-radius: 3px;
     box-shadow: 0 5px 10px 0 rgb(0 0 0/30%);
@@ -1556,57 +1546,44 @@ transition: all .5s;
     justify-content: center
 }
 
-.sponsor-carousel img {
-    opacity: .8
-}
-
-.sponsor-carousel .swiper-slide {
-    text-align: center
-}
-
-.sponsor-carousel img:hover {
-    opacity: 1;
-    transform: translateY(-5px)
-}
-
-.sponsor-grid {
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    grid-gap: 15px
-}
-
-.sponsor-grid .sponsor-item {
-    background: linear-gradient(90deg,rgba(105,85,180,0.1) 0%,rgba(105,85,180,0.3) 50%,rgba(105,85,180,0.1) 100%);
-    padding: 20px;
+@keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .logos {
+    overflow: hidden;
+    padding: 80px 0;
+ 
+    white-space: nowrap;
     position: relative;
-    border-radius: 2px;
-    -webkit-transition: all .3s cubic-bezier(.165,.84,.44,1);
-    transition: all .3s cubic-bezier(.165,.84,.44,1)
-}
-
-.sponsor-grid .sponsor-item:before {
-    background-image: repeating-linear-gradient(-45deg,rgba(255,255,255,0.1),rgba(255,255,255,0.1) 1px,transparent 1px,transparent 6px);
-    background-size: 4px 4px;
-    content: "";
+  }
+  
+  .logos:before,
+  .logos:after {
     position: absolute;
-    left: 0;
     top: 0;
-    width: 100%;
+    width: 250px;
     height: 100%;
-    z-index: -1
-}
-
-.sponsor-grid .sponsor-item:hover {
-    transform: translateY(-5px)
-}
-
-.sponsor-grid .sponsor-item img {
-    opacity: .8
-}
-
-.sponsor-grid .sponsor-item:hover img {
-    opacity: 1
-}
+    content: "";
+    z-index: 2;
+  }
+  
+ 
+  
+  .logos-slide {
+    display: inline-block;
+    animation: 50s slide infinite linear ;
+  }
+  
+  .logos-slide img {
+    height: 100px;
+    margin: 0 40px;
+  }
 
 .footer-section {
     position: relative;
